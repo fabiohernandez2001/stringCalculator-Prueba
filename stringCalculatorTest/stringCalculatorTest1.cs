@@ -18,6 +18,12 @@ namespace stringCalculatorTest
                        string.Format("Expected for '{0}'; Actual: {1}",
                                      3, result));
         }
-
+        [TestMethod]
+        public void addShouldNotHandleEmptyString() 
+        {
+            string empty = "";
+            int result = stringCalculator.stringCalculator.add(empty);
+            Assert.AreEqual(0, result, string.Format("Expected for '{0}'; Actual: {1}", 0, result));
+        }
     }
 }

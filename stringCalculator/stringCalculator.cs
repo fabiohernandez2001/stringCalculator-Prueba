@@ -4,9 +4,10 @@
     {
         public static int add(string op)
         {
-            string[] argvs = op.Split(',');
+            if (op.Equals("")){return 0;}
+            string[3] argvs = op.Split(',');
             int sum = 0;
-            for (int i = 0;i<argvs.Length;i++)
+            for (int i = 0;i<3;i++)
             {
                 sum += Int32.Parse(argvs[i]);
             }
