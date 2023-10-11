@@ -11,7 +11,7 @@
             {
                 sum += Int32.Parse(argvs[i]);
             }
-            return sum; 
+            return sum;
         }
     }
 }
