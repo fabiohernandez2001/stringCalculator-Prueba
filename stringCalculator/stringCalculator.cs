@@ -1,17 +1,20 @@
 ﻿namespace stringCalculator
 {
-    public static class stringCalculator
+    public class stringCalculator
     {
-        public static int add(string op)
+        public stringCalculator()
+        { }
+        public int add(string op)
         {
             if (op.Equals("")){return 0;}
             string[] argvs = op.Split(',');
             int sum = 0;
-            for (int i = 0;i<3;i++)
+            int min = Math.Min(3, argvs.Length);
+            for (int i = 0;i<min;i++)
             {
                 sum += Int32.Parse(argvs[i]);
             }
-            return sum;
+            return sum; 
         }
     }
 }
