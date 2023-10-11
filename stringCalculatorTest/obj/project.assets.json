@@ -594,6 +594,16 @@
             "related": ".xml"
           }
         }
+      },
+      "stringCalculator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/stringCalculator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/stringCalculator.dll": {}
+        }
       }
     }
   },
@@ -2286,6 +2296,11 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "stringCalculator/1.0.0": {
+      "type": "project",
+      "path": "../stringCalculator/stringCalculator.csproj",
+      "msbuildProject": "../stringCalculator/stringCalculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2293,7 +2308,8 @@
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.7.1",
-      "coverlet.collector >= 3.2.0"
+      "coverlet.collector >= 3.2.0",
+      "stringCalculator >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2322,7 +2338,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\fahernandez\\source\\repos\\stringCalculator\\stringCalculator\\stringCalculator.csproj": {
+              "projectPath": "C:\\Users\\fahernandez\\source\\repos\\stringCalculator\\stringCalculator\\stringCalculator.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
